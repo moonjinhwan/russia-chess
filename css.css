@@ -1,0 +1,36 @@
+
+.game-area {display: block;	margin: auto;   width: 40%;}
+#title{text-align: center; font-size: 65px; margin-bottom: 40px; height: 0%; color: rgb(165, 81, 42);}    
+
+.box {width: 380px;height: 380px;   margin: auto;}
+.box-square {height: 25%;  width: 25%;	 float: left; border-top: 10px solid rgb(165, 81, 42);	border-left: 10px solid rgb(165, 81, 42); border-right: 5px solid;
+border-bottom: 5px solid;}
+.box-square:nth-of-type(3n) {border-right: 10px solid rgb(165, 81, 42);}
+.box-square:nth-last-of-type(-n+3) {border-bottom: 10px solid rgb(165, 81, 42);}
+
+.box-square.player-0 {	background-image: url("img/red.png");	background-repeat: no-repeat;	background-position: center center;}
+
+.box-square.player-1 {	background-image: url("img/green.png");	background-repeat: no-repeat;	background-position: center center;}
+
+.box-square.size-3 {background-size: 85px;}
+
+.box-square.size-2 {background-size: 70px;}
+
+.box-square.size-1 {background-size: 53px;}
+
+.box-square:hover{ background-color: yellow;}
+/*게임규칙*/
+#help{border-radius: 25%;  text-align: right;     font-size: 40pt;    color: rgb(165, 81, 42);    margin-left: 14%;    width:90pt;    height:60pt;}
+#help:hover{background-color: yellow;}
+#rule{text-align: left;  font-size: 20pt; color: black;  margin-left: 14%; display: none;}
+/*바깥 piece css*/
+.game-piece-row {	width: 800px;	display: flex;	margin-top: 20px;	margin-bottom: 20px;
+    border: 2px solid white; width: 600pt; height:60pt; margin: auto;}
+.piece-player-small{    width:40pt; 	height: 40pt;}
+.piece-player-mid{  width:55pt;	    height: 55pt;}
+.piece-player-big{  width:66pt;  	height: 66pt;}
+/*board*/
+
+
+/*바깥 piece 칸*/
+.game-piece {margin:0 auto;}
